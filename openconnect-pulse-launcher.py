@@ -153,6 +153,7 @@ class OpenconnectPulseLauncher:
                 dsid = WebDriverWait(driver, float('inf')).until(lambda driver: driver.get_cookie('DSID'))
                 driver.quit()
                 logging.info('DSID cookie: %s', dsid)
+                print('DSID cookie: {}'.format(dsid))
 
 def main(argv):
     script_name = os.path.basename(__file__)
